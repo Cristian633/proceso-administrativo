@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sociedad en Comandita - Procesos Administrativos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #0288d1;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0277bd;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #01579b;
+    }
+
+    .content {
+      padding: 40px 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background: rgba(255, 255, 255, 0.9);
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #0277bd;
+    }
+
+    .content h2 {
+      font-size: 24px;
+      margin: 20px 0 10px;
+      color: #0277bd;
+    }
+
+    .content p, .content li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .content ul, .content ol {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .content ul li, .content ol li {
+      margin-bottom: 10px;
+    }
+
+    .media {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .media img, .media video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .media video {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .media-caption {
+      font-size: 14px;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #0288d1;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 28px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    footer a:hover {
+      transform: scale(1.2);
+      color: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Proceso Administrativo</h1>
+  </header>
+
+  <nav>
+    <a href="./pagina1.html">Inicio</a>
+  </nav>
+
+  <section class="content">
+    <h1>Sociedades en Comandita</h1>
+
+    <h2>Definición de Sociedad en Comandita</h2>
+    <p>“La sociedad en comandita se formará siempre entre uno o más socios que comprometen solidaria e ilimitadamente su responsabilidad por las operaciones sociales, y otro o varios socios que limitan la responsabilidad a sus respectivos aportes. Los primeros se denominarán socios gestores o colectivos y los segundos, socios comanditarios” (Art. 323 Código de Comercio).</p>
+    <p>“La razón social de las comanditarias se formará con el nombre completo o sólo el apellido de uno o más socios colectivos y se agregará la expresión 'y compañía' o la abreviatura '& Cía', seguida en todo caso de la indicación abreviada 'S. en C.', o de las palabras 'Sociedad Comanditaria por Acciones' o su abreviatura 'SCA', si es por acciones, so pena de que para todos los efectos legales se presuma de derecho que la sociedad es colectiva. El socio comanditario o la persona extraña a la sociedad que tolere la inclusión de su nombre en la razón social, responderá como socio colectivo” (Art. 324 Código de Comercio).</p>
+    <p><a href="https://www.ccc.org.co/sedevirtual/tramites-de-registros-publicos/como-crear-empresa/sociedades-en-comandita/">Fuente: Cámara de Comercio de Colombia</a></p>
+    <div class="media">
+      <img src="data:image/jpeg;base64,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" alt="Visión general de una Sociedad en Comandita">
+
+    </div>
+
+    <h2>Sociedad Comandita Simple</h2>
+    <p>La sociedad comandita simple es una estructura empresarial que permite la coexistencia de dos tipos de socios: aquellos que aportan capital pero no participan en la gestión de la empresa, y los que tienen responsabilidad ilimitada y gestionan la sociedad. La constitución de la sociedad debe realizarse a través de una escritura pública. Este tipo de sociedad combina la inversión de capital con la experiencia y habilidades de los socios gestores. Aunque los socios que aportan capital tienen responsabilidad limitada, los socios gestores asumen la responsabilidad ilimitada ante las deudas y obligaciones de la empresa. Se rige por un contrato social y debe inscribirse en el Registro Mercantil. El proceso de constitución de la sociedad incluye la formalización de un contrato social y el cumplimiento de los requisitos legales establecidos, asegurando así la validez de la sociedad. Esta forma societaria es especialmente adecuada para negocios en los que se requiere la participación de inversores financieros sin que estos intervengan en la gestión diaria del negocio, permitiendo así la combinación de recursos financieros y talento emprendedor.</p>
+    <div class="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eVbdRja2M3o?si=RhCSCLaqaaPgtWgV" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h2>Estructura de la Sociedad Comandita Simple</h2>
+    <p>La estructura de la sociedad comandita simple se basa en la coexistencia de dos tipos de socios: los socios comanditarios y los socios comanditados, quienes aportan el capital social necesario para el funcionamiento de la empresa. Esta forma de sociedad permite una combinación de capitales y habilidades, brindando ventajas a ambas partes involucradas. Incluir el nombre de un socio comanditario en la razón social de la sociedad implica que dicho socio adquiere responsabilidades similares a las de los socios colectivos, sin obtener derechos adicionales más allá de su condición de socio comanditario.</p>
+
+    <h2>Socios Comanditarios</h2>
+    <p>Una de las figuras clave en la sociedad comandita simple son los socios comanditarios. Estos socios, cuya responsabilidad se limita al capital aportado, desempeñan un papel fundamental en la financiación de la empresa. Su participación se centra en la inversión de recursos financieros en la empresa, lo que les otorga derechos a una parte de las ganancias generadas. Sin embargo, es importante destacar que no participan en la gestión ni en la toma de decisiones operativas, lo que les otorga una posición de inversores pasivos en la sociedad. Si un socio comanditario incluye su nombre en la razón social, asume las mismas responsabilidades que los socios colectivos.</p>
+
+    <h2>Ventajas y Beneficios</h2>
+    <p>Los socios comanditarios no asumen riesgos ilimitados, lo que los hace atractivos para aquellos inversionistas que desean participar en proyectos empresariales sin comprometer su patrimonio más allá del capital aportado. Por otro lado, los socios comanditados encuentran en esta estructura la posibilidad de obtener financiamiento externo sin perder el control de la gestión, lo que les permite desarrollar y hacer crecer sus ideas de negocio con el respaldo financiero necesario. La sociedad en comandita es una forma de sociedad mercantil que combina la participación de socios comanditarios y comanditados.</p>
+    <p><a href="https://www.tallylegal.io/blog/sociedad-comandita-simple-estructura-constitucion-y-responsabilidades">Fuente: Tally Legal</a></p>
+
+    <h2>Sociedad en Comandita por Acciones</h2>
+    <p>La sociedad en comandita por acciones (S en C por A) es un tipo de sociedad mercantil formada de uno o varios socios comanditados y de uno o varios socios comanditarios. Los primeros responden de manera subsidiaria, ilimitada y solidaria de las obligaciones y deudas de la sociedad para con los terceros. Los segundos pueden autorizar y vigilar la sociedad, pero no tienen la capacidad de desenvolverse como administradores, solamente están obligados al pago de sus acciones.</p>
+    <p>La razón o denominación social deberá ir seguida de las palabras «Sociedad en Comandita por Acciones» o su abreviatura «S. en C. por A.». Asimismo, se formará con los nombres de uno o más socios comanditados, seguida de las palabras «y compañía» o equivalentes cuando no figuren en ella los de todos.</p>
+    
+    <div class="media">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CcDGl8XpLTs?si=80-6gQ6guPi3vBIY" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <h2>Tipos de Socios en la Sociedad en Comandita por Acciones</h2>
+    <ul>
+      <li><strong>Socio comanditado:</strong> Tiene con exclusividad la administración de la sociedad, así como su representación legal y además deben responder de todas las obligaciones que tenga esta. El socio comanditado puede o no aportar capital a la sociedad.</li>
+      <li><strong>Socio comanditario:</strong> Aporta el capital, no participa en la administración de la sociedad ni tiene la representación legal de la misma. Su responsabilidad se limita al monto de su aportación en acciones.</li>
+    </ul>
+    
+
+    <h2>Videos de Referencia</h2>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=SpFiU0hce8I&ab_channel=EconomiaDesdeCasa">Sociedad Comandita Simple - Economía Desde Casa</a></li>
+      <li><a href="https://www.youtube.com/watch?v=xiOkWTm2C5c&ab_channel=VidaFinanciera">Sociedad en Comandita por Acciones - Vida Financiera</a></li>
+      <li><a href="https://www.youtube.com/watch?v=CcDGl8XpLTs&ab_channel=ECONOSUBLIME">Sociedades en Comandita - EconoSublime</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="subpagina1.html"><i class="fas fa-calendar-check"></i></a>
+    <a href="subpagina2.html"><i class="fas fa-sitemap"></i></a>
+    <a href="subpagina3.html"><i class="fas fa-users"></i></a>
+    <a href="subpagina4.html"><i class="fas fa-check-circle"></i></a>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sociedad Colectiva - Procesos Administrativos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #0288d1;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0277bd;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #01579b;
+    }
+
+    .content {
+      padding: 40px 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background: rgba(255, 255, 255, 0.9);
+      flex: 1;
+    }
+
+    .content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #0277bd;
+    }
+
+    .content h2 {
+      font-size: 24px;
+      margin: 20px 0 10px;
+      color: #0277bd;
+    }
+
+    .content p, .content li {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .content ul, .content ol {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .content ul li, .content ol li {
+      margin-bottom: 10px;
+    }
+
+    .media {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .media img, .media video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .media video {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .media-caption {
+      font-size: 14px;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #0288d1;
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+      margin-top: auto;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 28px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    footer a:hover {
+      transform: scale(1.2);
+      color: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Proceso Administrativo</h1>
+  </header>
+
+  <nav>
+    <a href="./pagina1.html">Inicio</a>
+  </nav>
+
+  <section class="content">
+    <h1>Guía para Crear una Sociedad Colectiva en Guatemala (Socio Capitalista e Industrial)</h1>
+
+    <h2>Introducción</h2>
+    <p>La Sociedad Colectiva en Guatemala, regulada por el Código de Comercio (arts. 16-24), es una entidad mercantil en la que los socios responden de manera solidaria e ilimitada por las deudas de la sociedad. En este caso, se estructura con un socio capitalista (aporta capital en dinero o bienes) y un socio industrial (aporta trabajo, conocimientos o servicios). A continuación, se definirán los pasos para constituir esta sociedad, asegurando cumplimiento con las normativas legales y vigentes.</p>
+    <div class="media">
+      <img src="data:image/jpeg;base64,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" alt="Introducción a la Sociedad Colectiva">
+
+    </div>
+
+    <h2>Requisitos Generales</h2>
+    <ul>
+      <li><strong>Socios:</strong> Mínimo 2 (pueden ser personas físicas; en este caso, un socio capitalista y un socio industrial).</li>
+      <li><strong>Responsabilidad:</strong> Solidaria e ilimitada para ambos socios, salvo acuerdos específicos en la escritura.</li>
+      <li><strong>Capital:</strong> No hay un monto mínimo legal, pero debe especificarse en la escritura. El socio capitalista aporta dinero o bienes; el socio industrial aporta trabajo o servicios.</li>
+      <li><strong>Documentos necesarios:</strong>
+        <ul>
+          <li>Testimonio de la escritura pública de constitución.</li>
+          <li>Acta notarial de nombramiento del administrador (puede ser uno de los socios).</li>
+          <li>Copia del Documento Personal de Identificación (DPI) o pasaporte de los socios.</li>
+          <li>Boleto de ornato del administrador o notario.</li>
+          <li>Comprobante de dirección (factura de agua, luz o teléfono).</li>
+        </ul>
+      </li>
+      <li><strong>Nombre:</strong> Debe incluir los nombres de uno o más socios y la expresión "Sociedad Colectiva" o "y Compañía".</li>
+    </ul>
+
+    <h2>Pasos para la Constitución</h2>
+    <ol>
+      <li><strong>Verificación y Reserva del Nombre</strong>
+        <ul>
+          <li><strong>Acción:</strong> Verifica la disponibilidad del nombre en el Registro Mercantil. Ejemplo: "Gómez y Compañía, Sociedad Colectiva".</li>
+          <li><strong>Requisitos:</strong>
+            <ul>
+              <li>Acceso a internet.</li>
+              <li>Pago de Q2 por verificación (más Q0.50 por resultados adicionales).</li>
+            </ul>
+          </li>
+          <li><strong>Tiempo:</strong> Inmediato (en línea).</li>
+          <li><strong>Costo:</strong> Q2-Q5.</li>
+        </ul>
+      </li>
+      <li><strong>Redacción de la Escritura Pública</strong>
+        <ul>
+          <li><strong>Acción:</strong> Un notario guatemalteco redacta la escritura constitutiva, que debe incluir:
+            <ul>
+              <li>Nombre de la sociedad (con "Sociedad Colectiva" o "y Compañía").</li>
+              <li>Objeto social (actividades comerciales).</li>
+              <li>Aportaciones:
+                <ul>
+                  <li><strong>Socio capitalista:</strong> Especificar monto en dinero o bienes (por ejemplo, Q5,000 o un vehículo valorado).</li>
+                  <li><strong>Socio industrial:</strong> Detallar el tipo de trabajo o servicios (por ejemplo, gestión administrativa, diseño, consultoría).</li>
+                </ul>
+              </li>
+              <li>Distribución de utilidades (puede ser proporcional a aportes o según acuerdo; el socio industrial suele recibir una parte por su trabajo).</li>
+              <li>Domicilio.</li>
+              <li>Nombramiento del administrador (puede ser el socio capitalista, industrial, o ambos).</li>
+              <li>Duración de la sociedad (indefinida o por un plazo).</li>
+              <li>Cláusulas sobre responsabilidad solidaria e ilimitada.</li>
+            </ul>
+          </li>
+          <li><strong>Requisitos:</strong>
+            <ul>
+              <li>DPI o pasaporte de los socios.</li>
+              <li>Para el socio capitalista: Comprobante de depósito del capital (en una cuenta bancaria a nombre de la sociedad) o valoración de bienes.</li>
+              <li>Para el socio industrial: Descripción detallada de su aporte (no requiere valoración monetaria, pero debe be clara).</li>
+            </ul>
+          </li>
+          <li><strong>Costo:</strong> Q1,500-Q4,000 (dependiendo del notario).</li>
+          <li><strong>Tiempo:</strong> 1-3 días.</li>
+        </ul>
+        <div class="media">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CaLJgBcvy_U?si=RdwypwkKqqnpRIw8" frameborder="0" allowfullscreen></iframe>
+
+    
+        </div>
+      </li>
+      <li><strong>Inscripción en el Registro Mercantil</strong>
+        <ul>
+          <li><strong>Acción:</strong> Registra la sociedad en el Registro Mercantil, en línea (Mi Negocio GT) o en las oficinas físicas.</li>
+          <li><strong>Documentos requeridos:</strong>
+            <ul>
+              <li>Formulario SATRM-02.</li>
+              <li>Testimonio de la escritura pública (original y copia).</li>
+              <li>Acta notarial de nombramiento del administrador.</li>
+              <li>Copia del DPI o pasaporte de los socios.</li>
+              <li>Comprobante de dirección.</li>
+              <li>Boleto de ornato.</li>
+              <li>Comprobantes de pago:
+                <ul>
+                  <li>Publicación de edicto: Q200.</li>
+                  <li>Edicto: Q30.</li>
+                  <li>Timbres fiscales: Q200 (patente de comercio de sociedad) + Q50 (patente de comercio de empresa).</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><strong>Proceso en línea:</strong>
+            <ul>
+              <li>Crea una cuenta en Mi Negocio GT.</li>
+              <li>Adjunta documentos escaneados.</li>
+              <li>Realiza pagos en línea o en Banrural.</li>
+            </ul>
+          </li>
+          <li><strong>Tiempo:</strong> 2-3 semanas (inscripción provisional); 5-8 días adicionales para inscripción definitiva tras publicación del edicto.</li>
+          <li><strong>Costo:</strong> Aproximadamente Q480 (sin incluir honorarios notariales).</li>
+        </ul>
+      </li>
+      <li><strong>Obtención del Número de Identificación Tributaria (NIT)</strong>
+        <ul>
+          <li><strong>Acción:</strong> Inscribe la sociedad en la Superintendencia de Administración Tributaria (SAT) para obtener el NIT y el Registro Tributario Unificado (RTU).</li>
+          <li><strong>Requisitos:</strong>
+            <ul>
+              <li>Copia del DPI del administrador.</li>
+              <li>Patente de comercio (inscripción en Registro Mercantil).</li>
+              <li>Formulario de inscripción en www.sat.gob.gt.</li>
+            </ul>
+          </li>
+          <li><strong>Proceso:</strong>
+            <ul>
+              <li>Completa el formulario en el portal de la SAT con datos de la sociedad (actividad económica, dirección).</li>
+              <li>Presenta documentos en una agencia SAT o en línea.</li>
+              <li>Envía un video con el DPI y NIT del administrador a activa@sat.gob.gt.</li>
+            </ul>
+          </li>
+          <li><strong>Tiempo:</strong> 1-3 días.</li>
+          <li><strong>Costo:</strong> Gratuito.</li>
+        </ul>
+      </li>
+      <li><strong>Autorización de Facturas y Libros Contables</strong>
+        <ul>
+          <li><strong>Acción:</strong> Solicita autorización de facturas y habilita libros contables ante la SAT y el Registro Mercantil.</li>
+          <li><strong>Libros requeridos:</strong>
+            <ul>
+              <li>Compras, Ventas, Inventario, Diario, Mayor, Balances.</li>
+              <li>Libro de actas de los socios.</li>
+            </ul>
+          </li>
+          <li><strong>Proceso:</strong>
+            <ul>
+              <li>Presenta los libros en el Registro Mercantil para autorización.</li>
+              <li>Habilita los libros en la SAT.</li>
+            </ul>
+          </li>
+          <li><strong>Costo:</strong> Q50-Q100 por libro.</li>
+          <li><strong>Tiempo:</strong> 1-2 días.</li>
+        </ul>
+      </li>
+      <li><strong>Registro en el Instituto Guatemalteco de Seguridad Social (IGSS)</strong>
+        <ul>
+          <li><strong>Acción:</strong> Si la sociedad contratará a tres o más empleados, regístrala en el IGSS.</li>
+          <li><strong>Documentos:</strong>
+            <ul>
+              <li>Formulario DRPT-001.</li>
+              <li>Nombramiento del administrador inscrito.</li>
+              <li>Escritura pública de constitución.</li>
+              <li>DPI del administrador.</li>
+              <li>Certificación contable.</li>
+            </ul>
+          </li>
+          <li><strong>Proceso:</strong>
+            <ul>
+              <li>Presenta documentos en el IGSS.</li>
+              <li>Afiliar empleados con el formulario DRPT-59.</li>
+            </ul>
+          </li>
+          <li><strong>Tiempo:</strong> 1-3 días.</li>
+          <li><strong>Costo:</strong> Gratuito (contribuciones según salarios).</li>
+        </ul>
+      </li>
+      <li><strong>Registro en el Ministerio de Trabajo</strong>
+        <ul>
+          <li><strong>Acción:</strong> Registra los contratos de trabajo en el Ministerio de Trabajo y Previsión Social (MINTRAB).</li>
+          <li><strong>Proceso:</strong>
+            <ul>
+              <li>Presenta contratos firmados en línea o en oficinas del MINTRAB.</li>
+            </ul>
+          </li>
+          <li><strong>Tiempo:</strong> 1-2 días.</li>
+          <li><strong>Costo:</strong> Gratuito.</li>
+        </ul>
+      </li>
+      <li><strong>Licencias y Permisos Adicionales</strong>
+        <ul>
+          <li><strong>Acción:</strong> Solicita licencias según el tipo de negocio (por ejemplo, sanitaria, municipal).</li>
+          <li><strong>Ejemplos:</strong>
+            <ul>
+              <li>Licencia sanitaria para alimentos o salud.</li>
+              <li>Permiso municipal para operar locales.</li>
+            </ul>
+          </li>
+          <li><strong>Proceso:</strong> Varía según la entidad.</li>
+          <li><strong>Costo y tiempo:</strong> Depende de la licencia.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Consideraciones Específicas para Socios Capitalista e Industrial</h2>
+    <ul>
+      <li><strong>Aportaciones:</strong>
+        <ul>
+          <li>El socio capitalista debe demostrar su aporte (depósito bancario o bienes tasados). Por ejemplo, un aporte de Q5,000 debe depositarse en una cuenta a nombre de la sociedad antes de la escritura.</li>
+          <li>El socio industrial no aporta capital, pero su trabajo debe describirse claramente (por ejemplo, "gestión de operaciones" o "diseño gráfico"). Este aporte no se valora monetariamente, pero se reconoce en la distribución de utilidades.</li>
+        </ul>
+      </li>
+      <li><strong>Utilidades:</strong>
+        <ul>
+          <li>Las utilidades se dividen según lo acordado en la escritura. Por ejemplo, el socio capitalista podría recibir un porcentaje mayor por su inversión, mientras que el socio industrial recibe por su trabajo (ejemplo: 60% capitalista, 40% industrial).</li>
+        </ul>
+      </li>
+      <li><strong>Responsabilidad:</strong>
+        <ul>
+          <li>Ambos socios responden ilimitadamente por las deudas, lo que significa que sus bienes personales pueden ser usados para cubrir obligaciones de la sociedad.</li>
+          <li>En la escritura, se puede limitar la participación del socio industrial en ciertas decisiones administrativas, si así se acuerda.</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="media">
+      <img src="https://example.com/socios-responsabilidad.jpg" alt="Socios Capitalista e Industrial">
+      <p class="media-caption">Ilustración de las responsabilidades de los socios en una Sociedad Colectiva.</p>
+    </div>
+
+    <h2>Notas Importantes</h2>
+    <ul>
+      <li><strong>Asesoría legal:</strong> Contrata a un notario o abogado especializado en derecho mercantil para redactar la escritura y evitar errores. Firmas como Vesco Consultores o Salazar-Muñoz pueden asistir.</li>
+      <li><strong>Tiempo total:</strong> 3-5 semanas, si no hay errores.</li>
+      <li><strong>Costo estimado:</strong> Q2,500-Q6,000 (incluyendo honorarios notariales y aranceles).</li>
+      <li><strong>Riesgos:</strong> La responsabilidad ilimitada es un riesgo significativo. Considera una Sociedad Anónima si deseas limitar la responsabilidad.</li>
+      <li><strong>Plataformas digitales:</strong>
+        <ul>
+          <li>Mi Negocio GT: Inscripción en línea.</li>
+          <li>Asisehace.gt: Guía de trámites.</li>
+        </ul>
+      </li>
+      <li><strong>Normativa:</strong> Revisa el Código de Comercio (arts. 16-24) para detalles legales.</li>
+    </ul>
+
+    <h2>Bibliografía</h2>
+    <ul>
+      <li>Registro Mercantil: Guia-Registral-de-Sociedades-Nuevas.pdf</li>
+      <li>SAT: Requisitos de Personas / Empresas</li>
+      <li>Asisehace.gt: Trámite - Así Se Hace</li>
+      <li>Vesco Consultores: Requisitos para Legalizar una empresa en Guatemala - Vesco Consultores</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="subpagina1.html"><i class="fas fa-calendar-check"></i></a>
+    <a href="subpagina2.html"><i class="fas fa-sitemap"></i></a>
+    <a href="subpagina3.html"><i class="fas fa-users"></i></a>
+    <a href="subpagina4.html"><i class="fas fa-check-circle"></i></a>
+  </footer>
+</body>
+</html>
